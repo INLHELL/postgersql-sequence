@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/my_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+# Method org.postgresql.jdbc.PgConnection.createClob() is not yet implemented.
+spring.jpa:
+  properties.hibernate.jdbc.lob.non_contextual_creation: true
+  database-platform: org.hibernate.dialect.PostgreSQL9Dialect
